@@ -1,61 +1,72 @@
-his project is an interactive OpenGL-based visualization that simulates gravitational lensing and the curvature of spacetime caused by massive objects, inspired by Einstein’s General Theory of Relativity. The program demonstrates how light rays bend when passing near a massive body, and how the gravitational potential affects the curvature of a 2D spacetime grid.
+🌌 3D Curved Spacetime & Gravitational Lensing Simulation
+
+This project is an interactive OpenGL-based visualization that simulates gravitational lensing and spacetime curvature caused by massive objects, inspired by Einstein’s General Theory of Relativity.
+It demonstrates how light bends when passing near a massive body and how gravitational potential deforms a 2D spacetime grid.
 
 🔭 Key Features
+• Real-time gravitational lensing
 
-Real-time simulation of gravitational lensing
-Light rays are traced step-by-step as they move through a gravitational field. Their direction continuously changes based on the calculated gravitational acceleration.
+Light rays are traced step-by-step as they move through a gravitational field. Their direction updates every frame based on computed gravitational acceleration.
 
-Visual spacetime curvature grid
-A dynamic grid is rendered where each point is displaced based on the gravitational potential, giving a 3D impression of curvature (“gravity well”).
+• Curved spacetime grid
 
-Massive object rendering
-Spherical bodies (representing stars/black holes) are placed in space. Their mass determines the depth of curvature and the intensity of light bending.
+A dynamic blue grid is displaced according to gravitational potential, forming a 3D “gravity well.”
 
-Interactive camera controls
-Users can rotate, zoom, and move around the scene:
+• Massive object rendering
 
-W/A/S/D — rotate view
+Spherical objects (stars or black holes) are placed in the scene. Their mass affects:
 
-Mouse drag — look around
+curvature depth
 
-Right mouse drag — zoom
+light bending strength
 
-Q / S / E — zoom in/out
+visual radius
 
-R — retrace light rays
+• Interactive camera controls
+Input	Action
+W/A/S/D	Rotate camera
+Left Mouse Drag	Rotate view
+Right Mouse Drag	Zoom
+Q / S / E	Zoom controls
+R	Retrace light rays
+• Physics-inspired calculations
 
-Physics-inspired calculations
+calculategravity() computes gravitational potential.
 
-Gravitational potential and acceleration are computed per-point.
+claculategravityaccelaretion() computes acceleration vectors.
 
-Light rays follow a numerically integrated path influenced by nearby masses.
-
-Mass determines gravitational strength and effective radius.
+tracelight() performs numerical integration to simulate photon motion.
 
 📐 Technical Implementation
 
-Built with OpenGL (FreeGLUT) for real-time rendering.
+Built using OpenGL + FreeGLUT for real-time rendering.
 
-Uses custom physics functions:
+Custom spacetime and physics engine implemented in C++.
 
-calculategravity() – gravitational potential.
+Light rays follow a discretized integration path.
 
-claculategravityaccelaretion() – acceleration vector.
+Adjustable grid resolution and step size.
 
-tracelight() – stepwise integration of light paths.
+Clean modular structure:
 
-Smooth animation and adjustable resolution for the spacetime grid.
+spacetime.h — physics + rendering class
 
-Clean modular structure (spacetime.h, main.cpp).
+main.cpp — program entry and GLUT setup
 
 🎯 Purpose
 
-This project serves as a visual and educational demonstration of:
+This project serves as an educational demonstration of:
 
-Spacetime curvature
+Spacetime curvature visualization
 
-Gravitational lensing
+Gravitational lensing physics
 
-Numerical integration of physics
+Numerical integration of motion
 
-Real-time graphical simulation using OpenGL
+Real-time computer graphics using OpenGL
+
+Applying university concepts (transformations, line algorithms, 3D rendering) to scientific simulation
+
+🔧 Build Instructions
+
+See BUILD.md for Windows & Linux compilation steps.
