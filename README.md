@@ -70,6 +70,10 @@ spacetime.h — physics + rendering class
 
 main.cpp — program entry and GLUT setup
 
+📦 **Build Instructions:**  
+See **[BUILD.md](./BUILD.md)** for Windows compilation steps.
+
+
 🎯 Purpose
 
 This project serves as an educational demonstration of:
