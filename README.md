@@ -41,6 +41,19 @@ claculategravityaccelaretion() computes acceleration vectors.
 
 tracelight() performs numerical integration to simulate photon motion.
 
+## 📸 Simulation Views
+
+**Side View (Light bending + deep curvature)**  
+<p align="center">
+  <img src="images/Screenshot 2025-12-11 125014.png" width="600">
+</p>
+
+**Front View of Gravity Well**  
+<p align="center">
+  <img src="images/Screenshot 2025-12-11 125003.png" width="600">
+</p>
+
+
 📐 Technical Implementation
 
 Built using OpenGL + FreeGLUT for real-time rendering.
