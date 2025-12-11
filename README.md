@@ -1,5 +1,9 @@
 🌌 3D Curved Spacetime & Gravitational Lensing Simulation
 
+<p align="center">
+  <img src="images/Screenshot 2025-12-11 125014.png" width="650">
+</p>
+
 This project is an interactive OpenGL-based visualization that simulates gravitational lensing and spacetime curvature caused by massive objects, inspired by Einstein’s General Theory of Relativity.
 It demonstrates how light bends when passing near a massive body and how gravitational potential deforms a 2D spacetime grid.
 
